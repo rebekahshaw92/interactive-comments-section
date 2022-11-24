@@ -5,7 +5,7 @@ $lightGrayishBlue: hsl(239, 57%, 85%);
 $moderateBlue: hsl(238, 40%, 52%);
 $softRed: hsl(358, 79%, 66%);
 $darkBlue: hsl(212, 24%, 26%);
-
+$white: hsl(0, 0%, 100%);
 
 * {
   padding:0;
@@ -34,7 +34,7 @@ body {
     width: 95%;
     margin-top: 5%;
     height: 310px;
-    background-color: $veryLightGray;
+    background-color: $white;
     border-radius: 10px;
     box-shadow: rgba(121, 121, 128, 0.01) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
