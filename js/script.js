@@ -41,7 +41,7 @@ fetch('./data.json', {
                               <div class="details">
                               <div class="details_upper row d-flex align-items-lg-end align-items-center">
                               <div class="col-lg-1 col-3">
-                              <img class="youIcon" src="${e.user.image.png}">
+                              <img class="youIcon" src="${e.user.image.png}" alt="icon">
                             </div>
 
                         <div class="col-lg-3 col">
@@ -54,7 +54,7 @@ fetch('./data.json', {
 
                         
                           <div class="col-lg-2 col ms-auto reply">
-                        <img class="details_edit_reply" src="images/icon-reply.svg" alt="">
+                        <img class="details_edit_reply" src="images/icon-reply.svg" alt="reply icon">
                         <span class="details_edit_reply_text" id="details_reply_text">Reply</span>
                         </div>
                         </div>
@@ -84,7 +84,7 @@ const renderReply = () => {
            <div class="details">
            <div class="details_upper row d-flex align-items-lg-end align-items-center">
            <div class="col-lg-1 col-3">
-           <img class="youIcon" src="${comments[1].replies[0].user.image.png}">
+           <img class="youIcon" src="${comments[1].replies[0].user.image.png}" alt="icon">
            </div>
 
            <div class="col-lg-3 col">
@@ -97,7 +97,7 @@ const renderReply = () => {
 
          
            <div class="col-lg-2 col ms-auto reply">
-         <img class="details_edit_reply" src="images/icon-reply.svg" alt="">
+         <img class="details_edit_reply" src="images/icon-reply.svg" alt="reply icon">
          <span class="details_edit_reply_text" id="details_reply_text">Reply</span>
          </div>
          </div>
@@ -125,7 +125,7 @@ const currentUserBox = () => {
          <div class="details">
          <div class="details_upper row d-flex align-items-lg-end align-items-center">
          <div class="col-lg-1 col-3">
-         <img class="youIcon" src="${comments[1].replies[1].user.image.png}">
+         <img class="youIcon" src="${comments[1].replies[1].user.image.png}" alt="icon">
          </div>
 
          <div class="col-lg-3 col">
@@ -141,9 +141,9 @@ const currentUserBox = () => {
          </div>
 
        <div class="col-lg-3 col ms-auto reply">
-         <img class="details_delete_reply" src="images/icon-delete.svg" alt="">
+         <img class="details_delete_reply" src="images/icon-delete.svg" alt="delete icon">
          <span class="details_delete_reply_text" id="details_delete_reply_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</span>
-         <img class="details_edit_reply" src="images/icon-edit.svg" alt="">
+         <img class="details_edit_reply" src="images/icon-edit.svg" alt="edit icon">
          <span class="details_edit_reply_text" id="details_delete_reply_edit">Edit</span>
        </div>
        </div>
@@ -165,7 +165,7 @@ const replyBox = () => {
         <form id="commentRely" action="javascript:void(0);" method="POST" onsubmit="getComment();">
         <div class="row">
         <div class="col-lg-1 col-1">
-            <img class="mainIcon" src="${currentUser.image.png}">
+            <img class="mainIcon" src="${currentUser.image.png}" alt="icon">
        </div>
          <div class="col-lg-9">
             <textarea class="form-control" id="message" type="text" placeholder="Add a comment..." style="height: 10rem;"></textarea>
@@ -215,7 +215,7 @@ const getComment = () => {
        <div class="details">
        <div class="details_upper row d-flex align-items-lg-end align-items-center">
        <div class="col-lg-1 col">
-       <img class="youIcon" src="${currentUser.image.png}">
+       <img class="youIcon" src="${currentUser.image.png}" alt="icon">
        </div>
 
        <div class="col-lg-2 col">
@@ -231,9 +231,9 @@ const getComment = () => {
        </div>
 
      <div class="col-lg-3 col ms-auto reply">
-       <img class="details_delete_reply" src="images/icon-delete.svg" alt="">
+       <img class="details_delete_reply" src="images/icon-delete.svg" alt="delete icon">
        <span class="details_delete_reply_text" id="details_delete_reply_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</span>
-       <img class="details_edit_reply" src="images/icon-edit.svg" alt="">
+       <img class="details_edit_reply" src="images/icon-edit.svg" alt="edit icon">
        <span class="details_edit_reply_text" id="details_delete_reply_edit">Edit</span>
      </div>
      </div>
@@ -358,7 +358,7 @@ const replyComment = () => {
       <form id="commentRely" action="javascript:void(0);" method="POST" onsubmit="getComment();">
       <div class="row">
       <div class="col-lg-1 col-1">
-          <img class="mainIcon" src="./images/avatars/image-juliusomo.png">
+          <img class="mainIcon" src="./images/avatars/image-juliusomo.png" alt="icon">
      </div>
        <div class="col-lg-9">
           <textarea class="form-control" id="updateText" type="text" placeholder="Add a comment..." style="height: 10rem;">@${replyText.textContent}</textarea>
@@ -402,7 +402,7 @@ const replyComment = () => {
        <div class="details">
        <div class="details_upper row d-flex align-items-lg-end align-items-center">
        <div class="col-lg-1 col">
-       <img class="youIcon" src="${currentUser.image.png}">
+       <img class="youIcon" src="${currentUser.image.png}" alt="icon">
        </div>
 
        <div class="col-lg-2 col">
@@ -418,9 +418,9 @@ const replyComment = () => {
        </div>
 
      <div class="col-lg-3 col ms-auto reply">
-       <img class="details_delete_reply" src="images/icon-delete.svg" alt="">
+       <img class="details_delete_reply" src="images/icon-delete.svg" alt="delete icon">
        <span class="details_delete_reply_text" id="details_delete_reply_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</span>
-       <img class="details_edit_reply" src="images/icon-edit.svg" alt="">
+       <img class="details_edit_reply" src="images/icon-edit.svg" alt="edit icon">
        <span class="details_edit_reply_text" id="details_delete_reply_edit">Edit</span>
      </div>
      </div>
