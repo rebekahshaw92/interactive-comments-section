@@ -1,0 +1,237 @@
+$lightGray: hsl(223, 19%, 93%);
+$grayishBlue: hsl(211, 10%, 45%);
+$veryLightGray: hsl(228, 33%, 97%);
+$lightGrayishBlue: hsl(239, 57%, 85%);
+$moderateBlue: hsl(238, 40%, 52%);
+$softRed: hsl(358, 79%, 66%);
+$darkBlue: hsl(212, 24%, 26%);
+
+
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $veryLightGray;
+}
+
+.container {
+  @include media-breakpoint-up(lg){
+  padding: 30px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+.card {
+    position:relative;
+    margin: 0 auto;
+    padding: 0 auto;
+    max-height: auto;
+    max-width: 100%;
+    width: 95%;
+    margin-top: 5%;
+    height: 310px;
+    background-color: $veryLightGray;
+    border-radius: 10px;
+    box-shadow: rgba(121, 121, 128, 0.01) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  @include media-breakpoint-up(lg){
+    width: 70%;
+    height: 210px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin-top: 3%; 
+    padding: 1rem;
+  // margin-bottom: 1rem;
+  }
+}
+
+.cardBox {
+  height: 260px;
+  @include media-breakpoint-up(lg){
+    height: 210px;
+  }
+}
+
+ .cardReply {
+   margin-left: 8%;
+   width: 87%;
+   @include media-breakpoint-up(lg){
+     width: 77%;
+     margin-left: 4%;
+
+   }
+
+ }
+
+
+ .mainIcon {
+   position:absolute;
+   bottom:0;
+   margin: 5%;
+   height: 40px;
+   width: 40px;
+   @include media-breakpoint-up(lg){
+    position: relative;
+    margin: 0;
+   }
+ }
+
+.youIcon {
+    margin: 20%;
+    height: 40px;
+    width: 40px;
+  @include media-breakpoint-up(lg){
+    margin: 0;
+  }
+}
+
+.stars {
+    background-color: $lightGray;
+    border-radius: 8px;
+    margin: 5%;
+    margin-left: 7%;
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+  @include media-breakpoint-up(lg) {
+    width: 4rem;
+    height: 8rem;
+    margin: 2%;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}
+
+ .reply {
+   position:absolute;
+  bottom:0;
+  //position: relative;
+   // margin-right: 5%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+    text-align: right;
+   // margin: auto;
+    @include media-breakpoint-up(lg){
+     position: relative;
+      margin: 0;
+      text-align: left;
+    }
+ }
+
+ .youText {
+    background-color: $moderateBlue;
+    //margin-top: 7%;
+    height: 40px;
+   // width: 40px !important;
+   border-radius: 3px;
+    @include media-breakpoint-up(lg){
+      width: 10%;
+      margin-top: 0;
+      height: 30px;
+    }
+ }
+
+ #sendBtn, #updateBtn, #replyBtn {
+    width: 30%;
+    height: 60%;
+    margin: 5%;
+    border-radius: 5%;
+    background-color: $moderateBlue;
+    &:hover,
+    &:focus{
+      opacity: 0.65;
+    } 
+    @include media-breakpoint-up(lg){
+      width: 100%;
+      height: 30%;
+    }
+ }
+
+ .form-control {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 0 auto;
+    background-color: $veryLightGray;
+    border: 2px solid $lightGray;
+    border-radius: 10px;
+    &::placeholder {
+      color: $darkBlue;
+    }
+    &:focus {
+      outline: 1.5px solid $grayishBlue;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      margin-top: 0;
+    }
+ }
+
+ #updateText {
+    width: 100%;
+    height: 120%;
+}
+
+ .stars_plus, .stars_minus {
+    cursor: pointer;
+ }
+
+ .btn-no {
+    background-color: $grayishBlue !important;
+    background-color: $grayishBlue !important;
+    height: 50px;
+    width: 170px !important;
+    border-radius: 5%;
+    &:hover,
+    &:focus{
+      opacity: 0.65;
+    } 
+ }
+
+ .btn-delete {
+      background-color: $softRed !important;
+      border-color: $softRed !important;
+      height: 50px;
+      width: 170px !important;
+      border-radius: 5%;
+      &:hover,
+      &:focus{
+        opacity: 0.65;
+      } 
+ }
+
+ .modal {
+   width: 98%;
+   border-radius: 20%;
+  }
+
+  .details_upper {
+    margin-top: 2%;
+    vertical-align:middle; 
+  }
+
+  #borderComment {
+    @include media-breakpoint-up(lg){
+    border-left: 2px solid $lightGray;
+    margin-left: 18%;
+    }
+  }
+
+  #updateText {
+    width: 90%;
+    @include media-breakpoint-up(lg){
+      width: 100%;
+    }
+  }
+
+ 
+
